@@ -1,0 +1,33 @@
+Method References
+========================
+--> Method reference is used to refer method of the functional interface.
+	It is compact and easy form a lambda expression.
+-->	Each time when you are using a lambda expression to just referring a method,
+	You can replace your lambda expression with a method reference.
+
+Example:
+	Printable printableLambda = (String msg) -> System.out.println(msg);
+	printableLambda.print("Hello");
+	
+	Above replaces with Below
+	
+	Printable printable = System.out::println;
+	printable.print("Hello");
+	
+Types of Methods References:
+=================================
+-->	There are four types of Method References in java:
+	1. Method Reference to static method
+		syntax: Class::StaticMethodName
+	
+	2. Reference to an instance method of a particular object
+		syntax: Object::InstanceMethodName
+		
+	3. Reference to an instance method of an arbitrary object of specific type
+		syntax: Class::InstanceMethodName
+	
+	4. Reference to a Constructor
+		syntax: ClassName::new
+		
+
+	

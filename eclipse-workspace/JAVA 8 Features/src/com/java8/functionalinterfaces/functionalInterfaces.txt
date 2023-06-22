@@ -1,0 +1,15 @@
+Functional Interface
+============================
+-->	Functional interfaces were introduced in java8
+-->	An interface that contains exactly one abstract one method is known as functional interface.
+-->	Functional interface can have any number of default, static methods but
+	can contain only one abstract method.
+-->	We use Java8 provides the @FunctionalInterface annotation to mark an interface as a
+	Functional Interface.
+
+Predefined Functional Interfaces
+==================================
+--> Function<input,output> ---------using apply() method
+--> Consumer<input> ----------------using accept() method
+--> Supplier<output> ---------------using get() method
+--> Runnable -----------------------using run() method
